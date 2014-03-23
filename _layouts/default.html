@@ -1,0 +1,49 @@
+{% include header.html %}
+
+<body style="background-image:url('/images/grid.png');background-repeat:repeat;">
+
+   <div class="row">
+    <div class="container">
+        <div class="col-md-9">
+        {% if page.title == 'Main' %}
+            {% include main.html %}
+        {% elsif page.title == "Leadership" %}
+          <div class="row" style="position:absolute">
+            {{ content }}
+          </div>
+        {% elsif page.title == "Calendar" %}
+          <div class="row" style="position:absolute">
+            {{ content }}
+          </div>
+        {% elsif page.title == "Contact" %}
+          <div class="row" style="position:absolute;padding-left:100px">
+            {{ content }}
+          </div>
+        {% endif %}
+        </div>
+
+      
+        <div class="col-md-3 col-md-offset-9">
+           {% include sidebar.html %}
+        </div >
+
+    </div> <!-- /container -->
+
+</body>
+
+{% include footer.html %}
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".popover-examples a").popover({
+        placement : 'top'
+    });
+});
+</script>
+
+<script type="text/javascript">
+$("[data-toggle=popover]")
+.popover({html:true})
+</script>
