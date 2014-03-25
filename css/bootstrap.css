@@ -3,6 +3,98 @@
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ 
+ 
+/*Some custom CSS*/
+
+#twitterback {
+   color:#fff;
+   background:rgba(1, 91, 126, .8);
+   border-style:solid;
+   border-color:#000;
+   border-width:3px;
+}
+
+
+
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#hover-cap-4col .thumbnail {
+    position:relative;
+    overflow:hidden;    
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 0px;
+}
+#footer {
+  position: absolute;
+  bottom: -30%;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color:#816c5d;
+  border-top:solid;
+  border-width: 2px;
+}
+
+
+.foottext {
+  color: #C9CCCC;
+}
+a.foottext:link { color: #B8AFB8; }
+a.foottext:visited { color: #CCC2CC; }
+a:active,
+a:hover {
+  color: #B0BBB6;
+  outline: 0;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+} 
+
+.caption {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    color:#fff !important;
+}
+
 
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {

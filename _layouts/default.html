@@ -8,42 +8,59 @@
         {% if page.title == 'Main' %}
             {% include main.html %}
         {% elsif page.title == "Leadership" %}
-          <div class="row" style="position:absolute">
+          <div class="row" style="background-color:#eee;position:absolute;padding-top:20px">
             {{ content }}
-          </div>
+         </div>
         {% elsif page.title == "Calendar" %}
           <div class="row" style="position:absolute">
             {{ content }}
           </div>
         {% elsif page.title == "Contact" %}
-          <div class="row" style="position:absolute;padding-left:100px">
+          <div class="row" style="background-color:#eee;padding:20px;">
             {{ content }}
           </div>
+
         {% endif %}
         </div>
 
       
-        <div class="col-md-3 col-md-offset-9">
+        <div class="col-md-3">
            {% include sidebar.html %}
         </div >
 
     </div> <!-- /container -->
-
+   </div>
 </body>
 
 {% include footer.html %}
 
 
 
-<script type="text/javascript">
-$(document).ready(function(){
-    $(".popover-examples a").popover({
-        placement : 'top'
-    });
-});
-</script>
+<!--<script type="text/javascript">-->
+<!--$(document).ready(function(){-->
+<!--    $(".popover-examples a").popover({-->
+<!--        placement : 'top'-->
+<!--    });-->
+<!--});-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+<!--$("[data-toggle=popover]")-->
+<!--.popover({html:true})-->
+<!--</script>-->
+
 
 <script type="text/javascript">
-$("[data-toggle=popover]")
-.popover({html:true})
+$(document).ready(function(){
+    $("[rel='tooltip']").tooltip();    
+    $('#hover-cap-4col .thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    );    
+ 
+});        
 </script>
