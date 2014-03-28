@@ -1,3 +1,2 @@
-something unique. How long does this have to be to cover a good amount but not be overwhelming?
-
-Contact me at zachary.kurtz at med dot nyu dot edu
+I am a PhD candidate at NYU co-advised by Dr. Martin Blaser and Dr. Rich Bonneau. My main area of research is computational biology and microbiology. I develop statistical tools to make meaningful inferences in biological models of diseases that are influenced by microbial dysbiosis.
+Visit my <a class="foottext" href="http://files.nyu.edu/zk311/public" target="_blank">homepage</a>.
