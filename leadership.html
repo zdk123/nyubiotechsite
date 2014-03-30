@@ -5,28 +5,28 @@ layout: default
 
 <ul  id="hover-cap-4col" >
 <li class="col-md-4">
-  <div class="thumbnail">
-    <div id="dovcap" class="caption">
-      <div class="scroll buttoncap">
+  <div class="thumbnail" data-id="dovcap">
+      <div id="dovcap" class="caption">
+        <div class="scroll2"> 
         <h4>Bio</h4>
         <p>{% include dovbio.txt %}</p>
+         </div>
       </div>
-    </div>
     <img src="/images/leaders/dov_shamir.png" alt="Dov Shamir">
   </div>
-  
   <button type="button" class="btn btn-default btn-lg" data-id="dovcap" id="btn-cap">
      <h4 style="text-align:center">Dov Shamir | Co-President</h4>
   </button>
 </li>
 
+
 <li class="col-md-4">
-  <div class="thumbnail">
+  <div class="thumbnail" data-id="artcap">
     <div id="artcap" class="caption">
-      <div class="scroll">
-        <h4>Bio</h4>
-        <p>{% include arturbio.txt %}</p>
-      </div>
+        <div class="scroll2"> 
+         <h4>Bio</h4>
+         <p>{% include arturbio.txt %}</p> 
+        </div>
     </div>
     <img src="/images/leaders/artur_belov.png" alt="Artur Belov">
   </div>
@@ -36,11 +36,11 @@ layout: default
 </li>
 
 <li class="col-md-4">
-  <div class="thumbnail">
+  <div class="thumbnail" data-id="kavcap">
     <div id="kavcap" class="caption">
-     <div class="scroll">
+        <div class="scroll2">
         <h4>Bio</h4>
-        <p> {% include kavithabio.txt %} </p>
+        <p> {% include kavithabio.txt %} </p> 
         </div>
     </div>
     <img src="/images/leaders/kgnan.png" alt="Kavitha Gnanasambandan">
@@ -53,12 +53,12 @@ layout: default
 
 
 <li class="col-md-4">
-  <div class="thumbnail">
-    <div id="zachcap" class="caption">
-       <div class="scroll">
+  <div class="thumbnail" data-id="zachcap">
+    <div id="zachcap" class="caption" >
+         <div class="scroll2">
          <h4>Bio</h4>
-         <p> {% include zachbio.txt %} </p>
-       </div>
+         <p > {% include zachbio.txt %} </p> 
+         </div>
     </div>
     <img src="/images/leaders/zkurtz.png" alt="Zachary Kurtz">
   </div>
@@ -69,5 +69,4 @@ layout: default
 
 
 </ul>
-
 

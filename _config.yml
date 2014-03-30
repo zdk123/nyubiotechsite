@@ -1,5 +1,4 @@
 name: NYU Biotech Association
-#baseurl: http://zach.pkheavy.com
 description: Home page of NYUBA
 markdown: redcarpet
 pygments: true
