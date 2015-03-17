@@ -94,12 +94,22 @@ a:visited { color: #a0a; }
   color: #aaa;
 }
 
-.footer {
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.footer .push {
+  height: 155px; /* .push must be the same height as .footer */
   font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
 }
 
 .footer .contact {
@@ -120,6 +130,10 @@ a:visited { color: #a0a; }
 .footer .rss img {
   border: 0;
 }
+
+
+
+
 
 /*****************************************************************************/
 /*

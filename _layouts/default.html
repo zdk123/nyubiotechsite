@@ -1,17 +1,5 @@
 {% include header.html %}
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49482444-1', 'biotechclub.org');
-  ga('send', 'pageview');
-
-</script>
-
-<body style="background-image:url('/images/grid.png');background-repeat:repeat;">
 
    <div class="row">
     <div class="container">
@@ -19,8 +7,13 @@
          {% if page.title == 'Main' %}
             {% include main.html %}
          {% elsif page.title == "Leadership" %}
-            <div class="row" style="background-color:#eee;position:absolute;padding-top:20px">
-             {{ content }}
+          <div class="container-fluid" style="position=absolute">
+            <div class="row" style="background-color:#eee;padding-top:20px;padding-bottom:10px">
+            {{ content }}
+            </div>
+            <div class="row" style="background-color:#eee;padding-top:10px;margin-top:10px">
+              {% include emeritus.html %}
+             </div>
            </div>
          {% elsif page.title == "captest" %}
             <div class="row" style="background-color:#eee;position:absolute;padding-top:20px">
@@ -31,23 +24,22 @@
              {{ content }}
            </div>
          {% elsif page.title == "Contact" %}
-           <div class="row" style="background-color:#eee;padding:20px;">
+           <div class="row" style="background-color:#eee;padding:20px">
              {{ content }}
            </div>
 
          {% endif %}
         </div>
 
-      
+
         <div class="col-md-3">
            {% include sidebar.html %}
         </div >
 
     </div> <!-- /container -->
-   </div>
-</body>
+
+   </div><!-- /row -->
+
 
 {% include footer.html %}
-
-
 

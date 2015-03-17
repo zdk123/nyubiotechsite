@@ -53,9 +53,10 @@ body {
   margin-bottom: 0px;
 }
 #footer {
-  position: absolute;
-  bottom: -30%;
+  position: relative;
+  bottom: -10%;
   width: 100%;
+  padding-left: 8%;
   /* Set the fixed height of the footer here */
   height: 30px;
   background-color:#816c5d;
@@ -89,13 +90,6 @@ html, body {
   padding-bottom:150px; /* this needs to be bigger than footer height*/
 }
 
-.footer {
-  position: relative;
-  margin-top: -150px; /* negative value of footer height */
-  height: 150px;
-  clear:both;
-  padding-top:20px;
-} 
 
 .caption {
     display: none;
