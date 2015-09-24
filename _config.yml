@@ -2,3 +2,21 @@ name: NYU Biotech Association
 description: Home page of NYUBA
 markdown: redcarpet
 pygments: true
+baseurl: http://biotechclub.org
+
+authors:
+  matt:
+    name: Matt Murphy
+    display_name: Matt Murphy
+    image: matt_murphy.png
+    email: Matthew.Murphy@med.nyu.edu
+    web: http://biotechclub.org
+    twitter: murphym45
+  zach:
+    name: Zachary Kurtz
+    display_name: Zachary Kurtz
+    image: zkurtz.png
+    email: Zachary.Kurtz@med.nyu.edu
+    web: http://files.nyu.edu/zk311/public
+    twitter: ledflyd
+    github: zdk123

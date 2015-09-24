@@ -1,6 +1,5 @@
 {% include header.html %}
 
-
    <div class="row">
     <div class="container">
         <div class="col-md-9">
@@ -27,6 +26,10 @@
            <div class="row" style="background-color:#eee;padding:20px">
              {{ content }}
            </div>
+         {% elsif page.title == "Blog" %}
+            <div class="row" style="background-color:#eee;padding:20px">
+             {{ content }}
+           </div>
 
          {% endif %}
         </div>
@@ -39,7 +42,6 @@
     </div> <!-- /container -->
 
    </div><!-- /row -->
-
 
 {% include footer.html %}
 
