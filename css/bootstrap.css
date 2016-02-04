@@ -7,13 +7,30 @@
  
 /*Some custom CSS*/
 
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -150px; /* the bottom margin is the negative value of the footer's height */
+}
+.footerpush, .push {
+    height: 150px; /* .push must be the same height as .footer */
+}
+
 
 #btn-cap {
     background:none;
     margin-top:-15px;
     margin-bottom:10px;
     padding: 5px 5px;
-    width:100%;
+    width:60%;
     white-space: normal;
 }
 
@@ -35,9 +52,56 @@ ul
     margin: 0;
 }
 #hover-cap-4col .thumbnail {
+    text-align:left;
     position:relative;
     overflow:hidden;    
 }
+
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.leaderthumbnail {
+  display: block;
+  padding: 4px;
+  margin: auto;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  max-width: 60%;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.leaderthumbnail > img,
+.leaderthumbnail a > img {
+  magin: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+a.leaderthumbnail:hover,
+a.leaderthumbnail:focus,
+a.leaderthumbnail.active {
+  border-color: #428bca;
+}
+..leaderthumbnail .caption {
+  padding: 9px;
+  color: #333;
+}
+
+
+
 
 
 /* Sticky footer styles
@@ -85,7 +149,7 @@ html, body {
 
 #main {
   overflow:auto;
-  padding-bottom:150px; /* this needs to be bigger than footer height*/
+  padding-bottom:155px; /* this needs to be bigger than footer height*/
 }
 
 

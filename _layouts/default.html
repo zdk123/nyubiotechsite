@@ -1,5 +1,6 @@
 {% include header.html %}
 
+<div class="wrapper">
    <div class="row">
     <div class="container">
         <div class="col-md-9">
@@ -7,10 +8,10 @@
             {% include main.html %}
          {% elsif page.title == "Leadership" %}
           <div class="container-fluid" style="position=absolute">
-            <div class="row" style="background-color:#eee;padding-top:20px;padding-bottom:10px">
+            <div class="row row-centered" style="background-color:#eee;padding-top:20px;padding-bottom:10px">
             {{ content }}
             </div>
-            <div class="row" style="background-color:#eee;padding-top:10px;margin-top:10px">
+            <div class="row row-centered" style="background-color:#eee;padding-top:10px;margin-top:10px">
               {% include emeritus.html %}
              </div>
            </div>
@@ -43,5 +44,7 @@
 
    </div><!-- /row -->
 
+ <div class="push"></div>
+</div> <!-- /wrapper-->
 {% include footer.html %}
 
