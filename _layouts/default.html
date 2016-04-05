@@ -3,9 +3,20 @@
 <div class="wrapper">
    <div class="row">
     <div class="container">
-        <div class="col-md-9">
-         {% if page.title == 'Main' %}
+       <div class="col-md-9">
+
+
+         {% if page.title == 'Mission' %}
+            {% include mission.html %}
+
+
+         {% elsif page.title == 'Main' %}
             {% include main.html %}
+
+         {% elsif page.title == 'GRO-Biotech' %}
+            {% include main.html %}
+
+
          {% elsif page.title == "Leadership" %}
           <div class="container-fluid" style="position=absolute">
             <div class="row row-centered" style="background-color:#eee;padding-top:20px;padding-bottom:10px">
@@ -44,7 +55,8 @@
 
    </div><!-- /row -->
 
- <div class="push"></div>
-</div> <!-- /wrapper-->
-{% include footer.html %}
+<!-- <div class="push"></div>-->
+<!--</div> <!-- /wrapper-->
+<!--{% include footer.html %}-->
 
+{% include footer.html %}

@@ -58,6 +58,12 @@ ul
 }
 
 
+.nopadding {
+   padding: 0 !important;
+   margin: 0px 0px 0px -15px;
+
+}
+
 /* centered columns styles */
 .row-centered {
     text-align:center;

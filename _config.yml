@@ -2,7 +2,8 @@ name: NYU Biotech Association
 description: Home page of NYUBA
 markdown: redcarpet
 pygments: true
-baseurl: http://biotechclub.org
+#baseurl: http://biotechclub.org
+baseurl: http://zach.pkheavy.com
 
 authors:
   matt:
